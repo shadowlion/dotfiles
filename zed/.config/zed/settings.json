@@ -11,10 +11,9 @@
     "copilot": false
   },
   "base_keymap": "VSCode",
-  "theme": "Catppuccin Frappé - No Italics",
+  "theme": "Catppuccin Frappé",
   "buffer_font_size": 13,
   "show_whitespaces": "selection",
-  "tab_size": 2,
   "project_panel": {
     "dock": "right"
   },
@@ -22,7 +21,6 @@
   "indent_guides": {
     "enabled": true
   },
-  "soft_wrap": "preferred_line_length",
   "language_overrides": {
     "Make": {
       "tab_size": 2,
@@ -31,40 +29,47 @@
     "Go": {
       "tab_size": 4,
       "indent_style": "tab",
-      "preferred_line_length": 100
+      "preferred_line_length": 100,
+      "soft_wrap": "preferred_line_length"
     },
     "HTML": {
-      "tab_size": 2,
+      "tab_size": 4,
       "indent_style": "space",
       "preferred_line_length": 120,
+      "soft_wrap": "preferred_line_length",
       "format_on_save": "off"
     },
     "Vue.js": {
       "tab_size": 2,
       "indent_style": "space",
-      "preferred_line_length": 80
+      "preferred_line_length": 80,
+      "soft_wrap": "preferred_line_length"
     },
     "TypeScript": {
       "tab_size": 2,
       "indent_style": "space",
-      "preferred_line_length": 80
+      "preferred_line_length": 80,
+      "soft_wrap": "preferred_line_length"
     },
     "TSX": {
       "tab_size": 2,
       "indent_style": "space",
-      "preferred_line_length": 80
+      "preferred_line_length": 80,
+      "soft_wrap": "preferred_line_length"
     },
     "JavaScript": {
       "tab_size": 2,
       "indent_style": "space",
       "preferred_line_length": 80,
+      "soft_wrap": "preferred_line_length",
       "formatter": "language_server"
     },
     "Python": {
       "tab_size": 4,
       "indent_style": "space",
-      "preferred_line_length": 88,
       "wrap_guides": [79, 80, 88],
+      "preferred_line_length": 88,
+      "soft_wrap": "preferred_line_length",
       "format_on_save": "on",
       "formatter": {
         "external": {
@@ -75,6 +80,9 @@
           ]
         }
       }
+    },
+    "Rust": {
+      "tab_size": 4
     }
   }
 }
