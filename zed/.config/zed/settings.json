@@ -21,6 +21,8 @@
   "indent_guides": {
     "enabled": true
   },
+  "tab_size": 2,
+  "indent_style": "space",
   "language_overrides": {
     "Make": {
       "tab_size": 2,
@@ -33,7 +35,7 @@
       "soft_wrap": "preferred_line_length"
     },
     "HTML": {
-      "tab_size": 4,
+      "tab_size": 2,
       "indent_style": "space",
       "preferred_line_length": 120,
       "soft_wrap": "preferred_line_length",
