@@ -39,7 +39,12 @@
       "indent_style": "space",
       "preferred_line_length": 120,
       "soft_wrap": "preferred_line_length",
-      "format_on_save": "off"
+      "format_on_save": {
+        "external": {
+          "command": "/Users/justin/.local/bin/djlint",
+          "arguments": ["--reformat", "--profile=django"]
+        }
+      }
     },
     "Vue.js": {
       "tab_size": 2,
