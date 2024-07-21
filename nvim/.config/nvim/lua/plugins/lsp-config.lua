@@ -19,6 +19,7 @@ return {
 
       require('mason').setup({
         ensure_installed = {
+          "djlint",
           "mypy",
           "black",
           "isort",

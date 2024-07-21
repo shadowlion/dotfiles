@@ -10,7 +10,12 @@ return {
         null_ls.builtins.formatting.stylua,
         -- javascript
         null_ls.builtins.diagnostics.eslint_d,
-        null_ls.builtins.formatting.prettierd,
+        null_ls.builtins.formatting.prettierd.with({
+          filetypes = {
+            "css",
+            "javascript",
+          },
+        }),
         -- golang
         null_ls.builtins.formatting.gofumpt,
         null_ls.builtins.diagnostics.golangci_lint,
@@ -19,6 +24,8 @@ return {
         -- python
         null_ls.builtins.formatting.black,
         null_ls.builtins.formatting.isort,
+        null_ls.builtins.formatting.djlint,
+        null_ls.builtins.diagnostics.djlint,
         null_ls.builtins.diagnostics.ruff,
         null_ls.builtins.diagnostics.mypy,
       },
