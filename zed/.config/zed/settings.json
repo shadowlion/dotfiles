@@ -10,15 +10,19 @@
   "features": {
     "copilot": false
   },
+  "buffer_font_family": "CaskaydiaCove Nerd Font Mono",
+  "buffer_font_size": 13,
   "base_keymap": "VSCode",
   "theme": "Catppuccin Frappé",
-  "buffer_font_size": 13,
   "show_whitespaces": "selection",
   "project_panel": {
     "dock": "right"
   },
   "wrap_guides": [80, 100, 120],
   "indent_guides": {
+    "enabled": true
+  },
+  "inlay_hints": {
     "enabled": true
   },
   "tab_size": 2,
