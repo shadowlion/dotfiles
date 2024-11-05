@@ -10,7 +10,7 @@
   "features": {
     "copilot": false
   },
-  "buffer_font_family": "Monaspace Neon",
+  "buffer_font_family": "JetBrainsMonoNL Nerd Font",
   "buffer_font_size": 13,
   "base_keymap": "VSCode",
   "theme": "Catppuccin Frappé",
@@ -27,6 +27,9 @@
   },
   "tab_size": 2,
   "indent_style": "space",
+  "file_types": {
+    "HTML": ["tmpl"]
+  },
   "language_overrides": {
     "Make": {
       "tab_size": 2,
