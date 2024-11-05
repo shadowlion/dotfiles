@@ -5,7 +5,7 @@ return {
 	},
 	config = function()
 		local alpha = require("alpha")
-    local theme = require("alpha.themes.startify")
+		local theme = require("alpha.themes.startify")
 		return alpha.setup(theme.config)
 	end,
 }

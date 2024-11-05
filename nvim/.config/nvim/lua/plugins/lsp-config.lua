@@ -19,10 +19,9 @@ return {
 
       require('mason').setup({
         ensure_installed = {
-          "djlint",
-          "mypy",
-          "black",
-          "isort",
+          "gofumpt",
+          "goimports_reviser",
+          "golines",
         },
       })
 
@@ -33,16 +32,22 @@ return {
         },
         ensure_installed = {
           "lua_ls",
-          "tsserver",
           "gopls",
           "golangci_lint_ls",
-          "ruff_lsp",
-          "pyright",
-          "rust_analyzer",
         },
         handlers = {
           function(server_name)
             require('lspconfig')[server_name].setup({})
+          end,
+
+          gopls = function()
+            require('lspconfig').gopls.setup({
+              settings = {
+                gopls = {
+                  gofumpt = true
+                }
+              }
+            })
           end,
         },
       })
