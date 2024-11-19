@@ -28,7 +28,7 @@
   "tab_size": 2,
   "indent_style": "space",
   "file_types": {
-    "HTML": ["tmpl"]
+    "HTML": ["tmpl", "gohtml"]
   },
   "language_overrides": {
     "Make": {
