@@ -31,6 +31,10 @@
     "HTML": ["tmpl", "gohtml"]
   },
   "language_overrides": {
+    "Markdown": {
+      "preferred_line_length": 80,
+      "soft_wrap": "preferred_line_length"
+    },
     "Make": {
       "tab_size": 2,
       "hard_tabs": true
@@ -45,13 +49,7 @@
       "tab_size": 2,
       "indent_style": "space",
       "preferred_line_length": 120,
-      "soft_wrap": "preferred_line_length",
-      "format_on_save": {
-        "external": {
-          "command": "/Users/justin/.local/bin/djlint",
-          "arguments": ["--reformat", "--profile=django"]
-        }
-      }
+      "soft_wrap": "preferred_line_length"
     },
     "Vue.js": {
       "tab_size": 2,
