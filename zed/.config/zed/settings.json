@@ -13,7 +13,7 @@
   "buffer_font_family": "JetBrainsMonoNL Nerd Font",
   "buffer_font_size": 13,
   "base_keymap": "VSCode",
-  "theme": "Catppuccin Frappé",
+  "theme": "Tokyo Night Storm",
   "show_whitespaces": "selection",
   "project_panel": {
     "dock": "right"
@@ -29,6 +29,13 @@
   "indent_style": "space",
   "file_types": {
     "HTML": ["tmpl", "gohtml"]
+  },
+  "lsp": {
+    "eslint": {
+      "settings": {
+        "nodePath": "./node_modules/eslint"
+      }
+    }
   },
   "language_overrides": {
     "Markdown": {
@@ -55,13 +62,19 @@
       "tab_size": 2,
       "indent_style": "space",
       "preferred_line_length": 80,
-      "soft_wrap": "preferred_line_length"
+      "soft_wrap": "preferred_line_length",
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true
+      }
     },
     "TypeScript": {
       "tab_size": 2,
       "indent_style": "space",
       "preferred_line_length": 80,
-      "soft_wrap": "preferred_line_length"
+      "soft_wrap": "preferred_line_length",
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true
+      }
     },
     "TSX": {
       "tab_size": 2,
@@ -74,7 +87,10 @@
       "indent_style": "space",
       "preferred_line_length": 80,
       "soft_wrap": "preferred_line_length",
-      "formatter": "language_server"
+      "formatter": "language_server",
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true
+      }
     },
     "Python": {
       "tab_size": 4,
