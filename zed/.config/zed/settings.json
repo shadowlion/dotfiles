@@ -13,7 +13,7 @@
   "buffer_font_family": "JetBrainsMonoNL Nerd Font",
   "buffer_font_size": 13,
   "base_keymap": "VSCode",
-  "theme": "Tokyo Night Storm",
+  "theme": "Catppuccin Frappé",
   "show_whitespaces": "selection",
   "project_panel": {
     "dock": "right"
