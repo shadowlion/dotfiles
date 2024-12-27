@@ -4,6 +4,7 @@ local options = {
     -- css = { "prettier" },
     -- html = { "prettier" },
     go = { "gofumpt" },
+    typescript = { "prettierd" },
   },
 
   format_on_save = {
