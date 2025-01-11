@@ -37,8 +37,8 @@ local servers = {
   golangci_lint_ls = {
     filetypes = { "go", "gomod" },
   },
-  vuels = {},
   ts_ls = {},
+  dockerls = {},
 }
 
 for name, opts in pairs(servers) do
