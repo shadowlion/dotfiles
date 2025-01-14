@@ -3,7 +3,7 @@ local options = {
     lua = { "stylua" },
     css = { "prettier" },
     html = { "prettier" },
-    go = { "gofumpt" },
+    go = { "goimports-reviser", "gofumpt" },
     typescript = { "eslint_d" },
     javascript = { "eslint_d" },
   },
