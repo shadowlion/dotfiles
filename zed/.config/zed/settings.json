@@ -12,7 +12,7 @@
     "copilot": false
   },
   "buffer_font_family": "JetBrainsMonoNL Nerd Font",
-  "buffer_font_size": 13,
+  "buffer_font_size": 14,
   "base_keymap": "VSCode",
   "theme": "Catppuccin Frappé",
   "show_whitespaces": "selection",
