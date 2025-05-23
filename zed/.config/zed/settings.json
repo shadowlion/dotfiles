@@ -34,6 +34,11 @@
       "settings": {
         "nodePath": "./node_modules/eslint"
       }
+    },
+    "biome": {
+      "settings": {
+        "require_config_file": true
+      }
     }
   },
   "language_overrides": {
