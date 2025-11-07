@@ -41,30 +41,26 @@
       }
     }
   },
-  "language_overrides": {
+  "languages": {
     "Markdown": {
       "preferred_line_length": 80,
       "soft_wrap": "preferred_line_length"
     },
-    "Make": {
-      "tab_size": 2,
-      "hard_tabs": true
-    },
     "Go": {
       "tab_size": 4,
-      "indent_style": "tab",
+      "hard_tabs": false,
       "preferred_line_length": 100,
       "soft_wrap": "preferred_line_length"
     },
     "HTML": {
       "tab_size": 2,
-      "indent_style": "space",
+      "hard_tabs": false,
       "preferred_line_length": 120,
       "soft_wrap": "preferred_line_length"
     },
     "Vue.js": {
       "tab_size": 2,
-      "indent_style": "space",
+      "hard_tabs": false,
       "preferred_line_length": 80,
       "soft_wrap": "preferred_line_length",
       "code_actions_on_format": {
@@ -73,7 +69,7 @@
     },
     "TypeScript": {
       "tab_size": 2,
-      "indent_style": "space",
+      "hard_tabs": false,
       "preferred_line_length": 80,
       "soft_wrap": "preferred_line_length",
       "code_actions_on_format": {
@@ -82,13 +78,13 @@
     },
     "TSX": {
       "tab_size": 2,
-      "indent_style": "space",
+      "hard_tabs": false,
       "preferred_line_length": 80,
       "soft_wrap": "preferred_line_length"
     },
     "JavaScript": {
       "tab_size": 2,
-      "indent_style": "space",
+      "hard_tabs": false,
       "preferred_line_length": 80,
       "soft_wrap": "preferred_line_length",
       "formatter": "language_server",
@@ -97,29 +93,12 @@
       }
     },
     "Python": {
+      "language_servers": ["ruff"],
       "tab_size": 4,
-      "indent_style": "space",
+      "hard_tabs": false,
       "wrap_guides": [79, 80, 88],
       "preferred_line_length": 88,
       "soft_wrap": "preferred_line_length",
-      "format_on_save": "on",
-      "formatter": {
-        "external": {
-          "command": "bash",
-          "arguments": [
-            "-c",
-            "ruff check --select=I --fix --stdin-filename {buffer_path} | ruff format --stdin-filename {buffer_path}"
-          ]
-        }
-      }
-    },
-    "Rust": {
-      "tab_size": 4
-    }
-  },
-  "languages": {
-    "Python": {
-      "language_servers": ["ruff"],
       "format_on_save": "on",
       "formatter": [
         {
@@ -136,6 +115,9 @@
           }
         }
       ]
+    },
+    "Rust": {
+      "tab_size": 4
     }
   }
 }
