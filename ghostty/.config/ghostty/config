@@ -4,3 +4,4 @@ macos-option-as-alt = true
 background-opacity = 0.9
 background-blur-radius = 20
 window-decoration = true
+keybind = shift+enter=text:\x1b\r

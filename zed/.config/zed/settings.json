@@ -7,56 +7,54 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "disable_ai": true,
   "icon_theme": "Catppuccin Frappé",
-  "features": {
-    "copilot": false
-  },
   "buffer_font_family": "JetBrainsMonoNL Nerd Font",
   "buffer_font_size": 13,
   "base_keymap": "VSCode",
   "theme": "Catppuccin Frappé",
   "show_whitespaces": "selection",
   "project_panel": {
-    "dock": "right"
+    "dock": "right",
   },
   "wrap_guides": [80, 100, 120],
   "indent_guides": {
-    "enabled": true
+    "enabled": true,
   },
   "inlay_hints": {
-    "enabled": false
+    "enabled": false,
   },
   "file_types": {
-    "HTML": ["tmpl", "gohtml"]
+    "HTML": ["tmpl", "gohtml"],
   },
   "lsp": {
     "eslint": {
       "settings": {
-        "nodePath": "./node_modules/eslint"
-      }
+        "nodePath": "./node_modules/eslint",
+      },
     },
     "biome": {
       "settings": {
-        "require_config_file": true
-      }
-    }
+        "require_config_file": true,
+      },
+    },
   },
   "languages": {
     "Markdown": {
       "preferred_line_length": 80,
-      "soft_wrap": "preferred_line_length"
+      "soft_wrap": "preferred_line_length",
     },
     "Go": {
       "tab_size": 4,
       "hard_tabs": false,
       "preferred_line_length": 100,
-      "soft_wrap": "preferred_line_length"
+      "soft_wrap": "preferred_line_length",
     },
     "HTML": {
       "tab_size": 2,
       "hard_tabs": false,
       "preferred_line_length": 120,
-      "soft_wrap": "preferred_line_length"
+      "soft_wrap": "preferred_line_length",
     },
     "Vue.js": {
       "tab_size": 2,
@@ -64,8 +62,8 @@
       "preferred_line_length": 80,
       "soft_wrap": "preferred_line_length",
       "code_actions_on_format": {
-        "source.fixAll.eslint": true
-      }
+        "source.fixAll.eslint": true,
+      },
     },
     "TypeScript": {
       "tab_size": 2,
@@ -73,14 +71,14 @@
       "preferred_line_length": 80,
       "soft_wrap": "preferred_line_length",
       "code_actions_on_format": {
-        "source.fixAll.eslint": true
-      }
+        "source.fixAll.eslint": true,
+      },
     },
     "TSX": {
       "tab_size": 2,
       "hard_tabs": false,
       "preferred_line_length": 80,
-      "soft_wrap": "preferred_line_length"
+      "soft_wrap": "preferred_line_length",
     },
     "JavaScript": {
       "tab_size": 2,
@@ -89,11 +87,17 @@
       "soft_wrap": "preferred_line_length",
       "formatter": "language_server",
       "code_actions_on_format": {
-        "source.fixAll.eslint": true
-      }
+        "source.fixAll.eslint": true,
+      },
     },
     "Python": {
-      "language_servers": ["ruff"],
+      "language_servers": [
+        "ruff",
+        // Disable basedpyright and enable Ty, and otherwise
+        // use the default configuration.
+        "ty",
+        "!basedpyright",
+      ],
       "tab_size": 4,
       "hard_tabs": false,
       "wrap_guides": [79, 80, 88],
@@ -102,22 +106,20 @@
       "format_on_save": "on",
       "formatter": [
         {
-          "code_actions": {
-            // Fix all auto-fixable lint violations
-            "source.fixAll.ruff": true,
-            // Organize imports
-            "source.organizeImports.ruff": true
-          }
+          "code_action": "source.fixAll.ruff",
+        },
+        {
+          "code_action": "source.organizeImports.ruff",
         },
         {
           "language_server": {
-            "name": "ruff"
-          }
-        }
-      ]
+            "name": "ruff",
+          },
+        },
+      ],
     },
     "Rust": {
-      "tab_size": 4
-    }
-  }
+      "tab_size": 4,
+    },
+  },
 }
