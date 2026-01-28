@@ -7,6 +7,18 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "file_scan_exclusions": [
+    "**/.git",
+    "**/.svn",
+    "**/.hg",
+    "**/.jj",
+    "**/CVS",
+    "**/.DS_Store",
+    "**/Thumbs.db",
+    "**/.classpath",
+    "**/.setting",
+    "__pycache__",
+  ],
   "disable_ai": true,
   "icon_theme": "Catppuccin Frappé",
   "buffer_font_family": "JetBrainsMonoNL Nerd Font",
@@ -28,11 +40,6 @@
     "HTML": ["tmpl", "gohtml"],
   },
   "lsp": {
-    "eslint": {
-      "settings": {
-        "nodePath": "./node_modules/eslint",
-      },
-    },
     "biome": {
       "settings": {
         "require_config_file": true,
@@ -40,6 +47,9 @@
     },
   },
   "languages": {
+    "Rust": {
+      "tab_size": 4,
+    },
     "Markdown": {
       "preferred_line_length": 80,
       "soft_wrap": "preferred_line_length",
@@ -103,23 +113,10 @@
       "wrap_guides": [79, 80, 88],
       "preferred_line_length": 88,
       "soft_wrap": "preferred_line_length",
-      "format_on_save": "on",
-      "formatter": [
-        {
-          "code_action": "source.fixAll.ruff",
-        },
-        {
-          "code_action": "source.organizeImports.ruff",
-        },
-        {
-          "language_server": {
-            "name": "ruff",
-          },
-        },
-      ],
-    },
-    "Rust": {
-      "tab_size": 4,
+      "code_actions_on_format": {
+        "source.organizeImports.ruff": true,
+        "source.fixAll.ruff": true,
+      },
     },
   },
 }
