@@ -7,6 +7,57 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "terminal": {
+    "font_size": 12.0
+  },
+  "git": {
+    "blame": {
+      "show_avatar": false
+    }
+  },
+  "audio": {
+    
+  },
+  "show_edit_predictions": false,
+  "agent_servers": {
+    "claude-acp": {
+      "default_config_options": {
+        "model": "sonnet",
+        "mode": "plan",
+        "effort": "default"
+      },
+      "type": "registry"
+    }
+  },
+  "cli_default_open_behavior": "existing_window",
+  "outline_panel": {
+    "dock": "right",
+  },
+  "collaboration_panel": {
+    "dock": "right",
+  },
+  "agent": {
+    "enable_feedback": false,
+    "show_turn_stats": false,
+    "tool_permissions": {
+      "default": "confirm",
+      "tools": {}
+    },
+    "default_profile": "ask",
+    "default_model": {
+      "provider": "anthropic",
+      "model": "claude-opus-4-7",
+      "enable_thinking": true,
+      "effort": "high",
+    },
+    "dock": "left",
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "git_panel": {
+    "file_icons": false,
+    "dock": "right",
+  },
   "file_scan_exclusions": [
     "**/.git",
     "**/.svn",
@@ -19,7 +70,7 @@
     "**/.setting",
     "__pycache__",
   ],
-  "disable_ai": true,
+  "disable_ai": false,
   "icon_theme": "Catppuccin Frappé",
   "buffer_font_family": "JetBrainsMonoNL Nerd Font",
   "buffer_font_size": 13,
@@ -52,52 +103,60 @@
     },
     "Markdown": {
       "preferred_line_length": 80,
-      "soft_wrap": "preferred_line_length",
+      "soft_wrap": "bounded",
     },
     "Go": {
       "tab_size": 4,
       "hard_tabs": false,
       "preferred_line_length": 100,
-      "soft_wrap": "preferred_line_length",
+      "soft_wrap": "bounded",
     },
     "HTML": {
       "tab_size": 2,
       "hard_tabs": false,
       "preferred_line_length": 120,
-      "soft_wrap": "preferred_line_length",
+      "soft_wrap": "bounded",
     },
     "Vue.js": {
       "tab_size": 2,
       "hard_tabs": false,
       "preferred_line_length": 80,
-      "soft_wrap": "preferred_line_length",
+      "soft_wrap": "bounded",
       "code_actions_on_format": {
         "source.fixAll.eslint": true,
       },
     },
     "TypeScript": {
-      "tab_size": 2,
-      "hard_tabs": false,
-      "preferred_line_length": 80,
-      "soft_wrap": "preferred_line_length",
+      "formatter": {
+        "language_server": {
+          "name": "biome",
+        },
+      },
       "code_actions_on_format": {
-        "source.fixAll.eslint": true,
+        "source.fixAll.biome": true,
+        "source.organizeImports.biome": true,
       },
     },
     "TSX": {
-      "tab_size": 2,
-      "hard_tabs": false,
-      "preferred_line_length": 80,
-      "soft_wrap": "preferred_line_length",
+      "formatter": {
+        "language_server": {
+          "name": "biome",
+        },
+      },
+      "code_actions_on_format": {
+        "source.fixAll.biome": true,
+        "source.organizeImports.biome": true,
+      },
     },
     "JavaScript": {
-      "tab_size": 2,
-      "hard_tabs": false,
-      "preferred_line_length": 80,
-      "soft_wrap": "preferred_line_length",
-      "formatter": "language_server",
+      "formatter": {
+        "language_server": {
+          "name": "biome",
+        },
+      },
       "code_actions_on_format": {
-        "source.fixAll.eslint": true,
+        "source.fixAll.biome": true,
+        "source.organizeImports.biome": true,
       },
     },
     "Python": {
@@ -112,7 +171,7 @@
       "hard_tabs": false,
       "wrap_guides": [79, 80, 88],
       "preferred_line_length": 88,
-      "soft_wrap": "preferred_line_length",
+      "soft_wrap": "bounded",
       "code_actions_on_format": {
         "source.organizeImports.ruff": true,
         "source.fixAll.ruff": true,
