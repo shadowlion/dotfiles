@@ -7,6 +7,7 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "diff_view_style": "split",
   "terminal": {
     "font_size": 12.0
   },
@@ -22,7 +23,8 @@
   "agent_servers": {
     "claude-acp": {
       "default_config_options": {
-        "model": "sonnet",
+        "fast": false,
+        "model": "default",
         "mode": "plan",
         "effort": "default"
       },
