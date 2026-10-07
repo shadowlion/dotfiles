@@ -72,7 +72,7 @@
     "**/.setting",
     "__pycache__",
   ],
-  "disable_ai": false,
+  "disable_ai": true,
   "icon_theme": "Catppuccin Frappé",
   "buffer_font_family": "JetBrainsMonoNL Nerd Font",
   "buffer_font_size": 13,
