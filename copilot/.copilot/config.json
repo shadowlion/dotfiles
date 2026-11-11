@@ -1,0 +1,21 @@
+// User settings belong in settings.json.
+// This file is managed automatically.
+{
+  "firstLaunchAt": "2026-09-08T19:56:02.224Z",
+  "appTipShown": true,
+  "reasoningSummariesCleanupDone": true,
+  "loggedInUsers": [
+    {
+      "host": "https://github.com",
+      "login": "shadowlion",
+      "kind": "githubDotCom"
+    }
+  ],
+  "lastLoggedInUser": {
+    "host": "https://github.com",
+    "login": "shadowlion"
+  },
+  "trustedFolders": [
+    "/Users/justin"
+  ]
+}
