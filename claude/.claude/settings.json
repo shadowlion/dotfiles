@@ -31,7 +31,6 @@
   "enabledPlugins": {
     "typescript-lsp@claude-plugins-official": true,
     "ponytail@ponytail": true,
-    "delta@zed-industries": true,
     "modern-web-guidance@claude-plugins-official": true
   },
   "extraKnownMarketplaces": {
