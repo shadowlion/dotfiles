@@ -1,14 +1,26 @@
 {
+  "permissions": {
+    "allow": [
+      "Bash(npx biome:*)"
+    ]
+  },
   "skillOverrides": {
     "5-whys-skill": "off",
+    "ask-matt": "off",
     "chief-of-staff": "off",
     "claude-handoff": "off",
+    "code-review": "off",
     "codebase-design": "off",
     "diagnose": "off",
     "diagnosing-bugs": "off",
+    "domain-modeling": "off",
+    "fallow": "off",
     "fallow-codex-onboarding": "off",
-    "find-skills": "off",
+    "fallow-review": "off",
+    "fallow-setup": "off",
     "git-guardrails-claude-code": "off",
+    "grill-with-docs": "off",
+    "grilling": "off",
     "handoff": "off",
     "hono": "off",
     "hono-jsx": "off",
@@ -18,7 +30,11 @@
     "improve-codebase-architecture": "off",
     "loop-me": "off",
     "migrate-to-shoehorn": "off",
+    "modern-web-guidance": "off",
+    "pr": "off",
+    "pr-template": "off",
     "prototype": "off",
+    "react-doctor": "off",
     "research": "off",
     "retro": "off",
     "scaffold-exercises": "off",
@@ -33,19 +49,17 @@
     "to-spec": "off",
     "to-tickets": "off",
     "triage": "off",
+    "ub-mode": "off",
+    "vercel-composition-patterns": "off",
+    "vercel-react-best-practices": "off",
     "wait-what": "off",
     "wayfinder": "off",
+    "web-design-guidelines": "off",
     "wizard": "off",
     "writing-beats": "off",
-    "writing-for-agents": "off",
     "writing-fragments": "off",
     "writing-guidelines": "off",
     "writing-shape": "off"
-  },
-  "permissions": {
-    "allow": [
-      "Bash(npx biome:*)"
-    ]
   },
   "hooks": {
     "SessionStart": [
@@ -73,8 +87,10 @@
   },
   "enabledPlugins": {
     "typescript-lsp@claude-plugins-official": true,
-    "ponytail@ponytail": true,
-    "modern-web-guidance@claude-plugins-official": true
+    "ponytail@ponytail": false,
+    "modern-web-guidance@claude-plugins-official": false,
+    "figma@synced": false,
+    "open-code-review@open-code-review": false
   },
   "extraKnownMarketplaces": {
     "ponytail": {
@@ -87,6 +103,12 @@
       "source": {
         "source": "github",
         "repo": "zed-industries/delta-claude"
+      }
+    },
+    "open-code-review": {
+      "source": {
+        "source": "github",
+        "repo": "alibaba/open-code-review"
       }
     }
   },

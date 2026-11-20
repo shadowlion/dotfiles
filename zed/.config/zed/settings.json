@@ -17,7 +17,7 @@
     }
   },
   "audio": {
-    
+
   },
   "show_edit_predictions": false,
   "agent_servers": {
@@ -137,7 +137,7 @@
     "Vue.js": {
       "tab_size": 2,
       "hard_tabs": false,
-      "preferred_line_length": 80,
+      "preferred_line_length": 120,
       "soft_wrap": "bounded",
       "code_actions_on_format": {
         "source.fixAll.eslint": true,
